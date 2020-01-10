@@ -5,21 +5,18 @@ const _ = require("lodash")
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions
 
-  return new Promise((resolve, reject) => {
-    // Remove trailing slash
-    const newPage = Object.assign({}, page, {
-      path: page.path === `/` ? page.path : page.path.replace(/\/$/, ``),
-    })
+  // Remove trailing slash
+  const newPage = {
+    ...page,
+    path: page.path === `/` ? page.path : page.path.replace(/\/$/, ``),
+  }
 
-    if (newPage.path !== page.path) {
-      // Remove the old page
-      deletePage(page)
-      // Add the new page
-      createPage(newPage)
-    }
-
-    resolve()
-  })
+  if (newPage.path !== page.path) {
+    // Remove the old page
+    deletePage(page)
+    // Add the new page
+    createPage(newPage)
+  }
 }
 
 // Create pages from markdown nodes
@@ -45,9 +42,9 @@ exports.createPages = ({ actions, createContentDigest, createNodeId, graphql }) 
 
     const slides = result.data.allMarkdownRemark.edges
     slides.sort((a, b) => (a.node.fileAbsolutePath > b.node.fileAbsolutePath ? 1 : -1))
-    const nodes = slides.flatMap(s =>
-      s.node.html.split("<hr>").map(html => ({
-        node: s.node,
+    const nodes = slides.flatMap(slide =>
+      slide.node.html.split("<hr>").map(html => ({
+        node: slide.node,
         html,
       }))
     )
@@ -66,7 +63,7 @@ exports.createPages = ({ actions, createContentDigest, createNodeId, graphql }) 
       })
     })
 
-    nodes.forEach((slide, index) => {
+    nodes.forEach((_slide, index) => {
       createPage({
         path: `/${index + 1}`,
         component: slideTemplate,
