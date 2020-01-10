@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    name: `Fabian Schultz`,
-    title: `Gatsby Deck`,
-    date: `July 30, 2018`,
+    name: `React Toulouse #7`,
+    title: `Gatsby`,
+    date: `27 janvier 2020`,
   },
   plugins: [
     `gatsby-plugin-layout`,
@@ -37,8 +37,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-deck`,
-        short_name: `deck`,
+        name: `gatsby-presentation`,
+        short_name: `gatsby-prez`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

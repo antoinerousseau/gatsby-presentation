@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-deck",
-  "description": "Create presentations using Gatsby, React & Markdown.",
-  "version": "2.0.0",
-  "author": "Fabian Schultz <desk@fabianschultz.com>",
+  "name": "gatsby-presentation",
+  "description": "React Toulouse #7",
+  "version": "1.0.0",
+  "author": "Antoine Rousseau <antoine@rousseau.im>",
   "dependencies": {
     "gatsby": "^2.18.21",
     "gatsby-plugin-layout": "^1.1.21",
@@ -23,7 +23,10 @@
   },
   "keywords": [
     "gatsby",
-    "gatsby-starter"
+    "gatsby-starter",
+    "react",
+    "toulouse",
+    "presentation"
   ],
   "license": "MIT",
   "main": "n/a",
