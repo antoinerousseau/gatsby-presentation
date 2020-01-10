@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
-import { navigate } from 'gatsby';
+import React, { useEffect } from "react"
+import { navigate } from "gatsby"
 
-class Index extends Component {
-  componentDidMount() {
-    navigate(`/1`, { replace: true });
-  }
-  render() {
-    return <div />;
-  }
+const Index = props => {
+  useEffect(() => {
+    navigate(`/1`, { replace: true })
+  }, [])
+
+  return <div />
 }
 
-export default Index;
+export default Index

@@ -1,10 +1,7 @@
-import React from 'react';
-import {
-  TransitionGroup,
-  Transition as ReactTransition,
-} from 'react-transition-group';
+import React from "react"
+import { TransitionGroup, Transition as ReactTransition } from "react-transition-group"
 
-const timeout = 200;
+const timeout = 200
 const getTransitionStyles = {
   entering: {
     position: `absolute`,
@@ -18,34 +15,30 @@ const getTransitionStyles = {
     transition: `opacity ${timeout}ms ease-in-out`,
     opacity: 0,
   },
-};
-
-class Transition extends React.PureComponent {
-  render() {
-    const { children, location } = this.props;
-
-    return (
-      <TransitionGroup>
-        <ReactTransition
-          key={location.pathname}
-          timeout={{
-            enter: timeout,
-            exit: timeout,
-          }}
-        >
-          {status => (
-            <div
-              style={{
-                ...getTransitionStyles[status],
-              }}
-            >
-              {children}
-            </div>
-          )}
-        </ReactTransition>
-      </TransitionGroup>
-    );
-  }
 }
 
-export default Transition;
+const Transition = ({ children, location }) => {
+  return (
+    <TransitionGroup>
+      <ReactTransition
+        key={location.pathname}
+        timeout={{
+          enter: timeout,
+          exit: timeout,
+        }}
+      >
+        {status => (
+          <div
+            style={{
+              ...getTransitionStyles[status],
+            }}
+          >
+            {children}
+          </div>
+        )}
+      </ReactTransition>
+    </TransitionGroup>
+  )
+}
+
+export default Transition
