@@ -6,9 +6,9 @@ Présentation et retours d'expérience
 
 ## Sponsors
 
-Commit42 (Occitech) 🍕
+[Commit42](https://www.commit42.com/) ([Occitech](https://www.occitech.fr/)) 🍕
 
-Ô Local 🏠
+[Ô Local](https://www.olocal.fr/) 🏠
 
 ---
 
@@ -18,7 +18,7 @@ Un framework React pour générer des sites statiques
 
 ---
 
-## Un site statique, pourquoi ?
+## Un site statique ?
 
 - Référencement plus rapide et plus fiable
 - Pages hybrides : le contenu s'affiche immédiatement, puis l'interactivité arrive pour "augmenter" la page (`ReactDOM.hydrate`)
