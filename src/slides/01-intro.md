@@ -1,25 +1,62 @@
-# Gatsby Deck
+# Gatsby
 
-Create presentations using Gatsby & React.
-
----
-
-> Inscrutable icons litter the face of the devices even though the research
-> community has long demonstrated that people cannot remember the meaning of
-> more than a small number of icons […] Who can remember what each icon
-> means? Not me.
-> <cite>Don Norman</cite>
+Présentation et retours d'expérience
 
 ---
 
-# 🤫
+## Sponsors
+
+Commit42 (Occitech) 🍕
+
+Ô Local 🏠
 
 ---
 
-## Slides are written in Markdown!
+## Gatsby, c'est quoi ?
 
-Here's the source of the first slide:
+Un framework React pour générer des sites statiques
 
-    # Gatsby Deck
+---
 
-    Create presentations using Gatsby & React.
+## Un site statique, pourquoi ?
+
+- Référencement plus rapide et plus fiable
+- Pages hybrides : le contenu s'affiche immédiatement, puis l'interactivité arrive pour "augmenter" la page (`ReactDOM.hydrate`)
+- Fonctionne même sans Javascript
+
+---
+
+## C'est pas ce que fait le SSR ?
+
+Le _Server-Side Rendering_ apporte les mêmes avantages, mais dynamiquement : génération des pages à la demande par un serveur Node
+
+Statique = pas de serveur !
+
+---
+
+## SSR vs statique
+
+De simples fichiers (HTML, CSS, JavaScript, etc.) :
+
+- CDN
+- Scalable
+- Sécurité (pas de serveur => pas d'attaque !)
+
+---
+
+## Mais si mon contenu change ?!
+
+Selon le contenu, il y a 2 possibilités :
+
+- Régénérer le site (_build_)
+- Utiliser des APIs côté client
+
+---
+
+# JAMstack
+
+**J**avaScript • **A**PIs • **M**arkup
+
+https://jamstack.systems/
+
+https://jamstack.org/

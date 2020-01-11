@@ -1,14 +1,44 @@
-Images can be embedded from the local filesystem!
-
-![xkcd on standards](./standards.png)
-
-(attribution: xkcd.com)
+# Particularités de Gatsby
 
 ---
 
-![Monkey](//i.imgur.com/PnbINJ6.gif)
+## Données
 
-🌟 Star it on [GitHub](//github.com/fabe/gatsby-deck),  
-or create your own with:
+- Regroupement des données sources (différentes APIs, bases de données, fichiers...)
+- Requêtes GraphQL pour y accéder
 
-    gatsby new my-slides https://github.com/fabe/gatsby-starter-deck
+---
+
+## GraphQL ? Mais c'est overkill ! 😱
+
+- Première approche déroutante
+- Puissance du langage
+- N'embarquer que les données nécessaires dans chaque page
+- Outil intégré à Gatsby : GraphiQL
+
+---
+
+## Framework orienté pour le Web moderne
+
+Outils intégrés + plugins officiels pour les cas courants
+
+---
+
+## Gatsby Link
+
+- Préchargement des liens approchés
+- Navigation Gatsby = `@reach/router` = `react-router`
+
+---
+
+## Gatsby Image
+
+- Génération de plusieurs tailles de chaque image (pour _srcset_)
+- Affichage progressif (_placeholder_ + transition)
+- Affichage des images visibles uniquement (`IntersectionObserver`)
+
+---
+
+## Manifest / offline
+
+TODO
