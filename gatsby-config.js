@@ -26,6 +26,8 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 1920,
+              tracedSVG: { color: "#663399" },
+              wrapperStyle: fluidResult => `width:${fluidResult.presentationWidth / 2}px;`,
             },
           },
         ],
