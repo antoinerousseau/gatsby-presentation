@@ -6,7 +6,7 @@ Présentation et retours d'expérience
 
 ## Sponsors
 
-[Commit42](https://www.commit42.com/) ([Occitech](https://www.occitech.fr/)) 🍕
+[Commit42](https://www.commit42.com/) 🍕
 
 [Ô Local](https://www.olocal.fr/) 🏠
 

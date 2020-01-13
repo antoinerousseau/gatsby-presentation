@@ -36,16 +36,20 @@ Outils intégrés + plugins officiels pour les cas courants
 - Génération de plusieurs tailles de chaque image (pour _srcset_)
 - Affichage progressif (_placeholder_ + transition)
 - Affichage des images visibles uniquement (`IntersectionObserver`)
-- Améliorations [à](https://www.linkedin.com/posts/sebastienlorber_reactjs-gatsby-nextjs-activity-6618796398550765568-HTVQ) [venir](https://gist.github.com/sidharthachatterjee/e0c961fd92ce287dc020939037b915ce)
 
 ---
 
 ## Manifest / offline
 
-TODO
+Une _Progressive Web App_ en configurant un simple plugin
 
 ---
 
 ## Tooling
 
 - Rechargement à chaud en mode `develop`
+
+## Futur
+
+- `useQuery` avec _Suspense_, et paramètres (=> [querying 2.0](https://gist.github.com/sidharthachatterjee/e0c961fd92ce287dc020939037b915ce))
+- Incremental builds
