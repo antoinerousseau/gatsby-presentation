@@ -3,6 +3,8 @@ module.exports = {
     name: `React Toulouse #7`,
     title: `Gatsby`,
     date: `27 janvier 2020`,
+    author: `Antoine Rousseau`,
+    authorUrl: `https://antoine.rousseau.im`,
   },
   plugins: [
     `gatsby-plugin-layout`,

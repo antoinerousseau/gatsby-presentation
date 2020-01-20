@@ -165,6 +165,8 @@ header a:hover {
   color: var(--meta);
 }
 
-header span {
+header span,
+header time a,
+header time a:hover {
   color: var(--text);
 }

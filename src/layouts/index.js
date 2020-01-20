@@ -6,12 +6,14 @@ import Transition from "../components/transition"
 
 import "./index.css"
 
-const Header = ({ name, title, date }) => (
+const Header = ({ name, title, date, author, authorUrl }) => (
   <header>
     <Link to="/1">
       <span>{name}</span> — {title}
     </Link>
-    <time>{date}</time>
+    <time>
+      {date} — <a href={authorUrl}>{author}</a>
+    </time>
   </header>
 )
 
@@ -28,6 +30,8 @@ const TemplateWrapper = ({ data, location, children }) => {
           name
           title
           date
+          author
+          authorUrl
         }
       }
       allSlide {
@@ -70,10 +74,12 @@ const TemplateWrapper = ({ data, location, children }) => {
     }
   }, [next, previous])
 
+  const { title, name } = site.siteMetadata
+
   return (
     <div>
-      <Helmet title={`${site.siteMetadata.title} — ${site.siteMetadata.name}`} />
-      <Header name={site.siteMetadata.name} title={site.siteMetadata.title} date={site.siteMetadata.date} />
+      <Helmet title={`${title} — ${name}`} />
+      <Header {...site.siteMetadata} />
       <Swipeable onSwipedLeft={next} onSwipedRight={previous}>
         <Transition location={location}>
           <div id="slide" style={{ width: "100%" }}>
