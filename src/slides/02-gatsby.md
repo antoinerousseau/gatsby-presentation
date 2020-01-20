@@ -1,4 +1,37 @@
+## Pourquoi Gatsby ?
+
+- Popularité (41 600 étoiles sur [GitHub](https://github.com/gatsbyjs/gatsby))
+- Communauté active, dépôt très vivant
+- Modularité, annuaire de plugins
+- React
+
+---
+
+# Autres solutions similaires
+
+- [React-Static](https://github.com/react-static/react-static/)
+- [Next.js](https://nextjs.org/)
+- [Phenomic](https://phenomic.io/)
+
+---
+
 # Particularités de Gatsby
+
+---
+
+## Framework
+
+Intègre et préconfigure les outils de base en développement React moderne
+
+- Configuration Webpack
+- Navigation (points d'entrée, routage, liens)
+- SSR Node (pour générer les pages statiques à partir de code React)
+
+Mais rien de superflu. Ensuite :
+
+- [Plugins Gatsby](https://www.gatsbyjs.org/plugins/)
+- NPM
+- API Node
 
 ---
 
@@ -49,7 +82,11 @@ Une _Progressive Web App_ en configurant un simple plugin
 
 - Rechargement à chaud en mode `develop`
 
+---
+
 ## Futur
+
+Gatsby 3
 
 - `useQuery` avec _Suspense_, et paramètres (=> [querying 2.0](https://gist.github.com/sidharthachatterjee/e0c961fd92ce287dc020939037b915ce))
 - Incremental builds
