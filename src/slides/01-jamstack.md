@@ -22,38 +22,47 @@ Un framework React pour générer des sites statiques rapides
 
 - Fichiers HTML, CSS, images
 - Liens entre les pages
-- Une touche de JavaScript pour le fun
+- Une touche de JavaScript pour le fun 🎉
 
 ---
 
 ## Puis PHP est apparu
 
-- Contenu dynamique, portions réutilisables
+- Contenu dynamique
+- Portions réutilisables
+- Base de données
+
+---
 
 Mais...
 
 - Applications monolithiques
 - Mélange de code serveur et client
-- Sécurité
-- Scalabilité
+- Vulnérabilité aux attaques
+- Montée en charge difficile (_load balancing_ nécessaire)
 
 ---
 
 ## Puis les SPA sont arrivés
 
 - Application Web côté client
-- 100% JavaScript (même la navigation)
-- Séparée du serveur => API
+- 100% JavaScript (même la navigation) => rapide et interactif
+- Séparée du serveur => _API_
+- Fichiers statiques => _CDN_
+
+---
 
 Mais...
 
-- Référencement plus lent et moins maîtrisé
-- Page vide durant le chargement
-- Un seul point d'entrée (code-splitting possible mais manuel)
+- Référencement plus lent et moins maîtrisé 📉
+- Page vide durant le chargement ⏱
+- Un seul point d'entrée 📦 (code-splitting possible mais manuel ✂️)
 
 ---
 
 ## Laissez entrer les hybrides
+
+Statique + PWA = ❤️
 
 - Toutes les pages statiques sont générées, chacune avec leur HTML/CSS/JavaScript
 - Le contenu s'affiche immédiatement, puis l'interactivité arrive pour "augmenter" la page : JavaScript reprend la main (`ReactDOM.hydrate`)
@@ -71,13 +80,13 @@ Statique = pas de serveur !
 
 ---
 
-## SSR vs statique
+## SSR vs statique (SSG)
 
-De simples fichiers (HTML, CSS, JavaScript, etc.)
+Un _Static Site Generator_ génère de simples fichiers (HTML, CSS, JavaScript, etc.)
 
-- CDN
-- Scalable
-- Sécurité
+- Peut être directement servi par un Réseau de Diffusion de Contenu (CDN) ⚡️
+- Montée en charge facile à gérer (scalabilité) et souvent externalisée (CDN par exemple) ☁︎
+- Sécurité 🛡
 
 ---
 
@@ -86,8 +95,9 @@ De simples fichiers (HTML, CSS, JavaScript, etc.)
 Selon le contenu, il y a 2 possibilités :
 
 - Régénérer le site (_build_)
-- Utiliser des API côté client
-- Moins adapté au contenu fortement dynamique => SSR
+- Utiliser des _API_ côté client (et avoir quand même une coquille pré-générée)
+- Moins adapté au contenu fortement dynamique => _SSR_
+- Inutile pour un backoffice ou un espace client => _SSR_ ou _SPA_ (_CRA_ etc.)
 
 ---
 

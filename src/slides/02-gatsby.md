@@ -1,17 +1,16 @@
 ## Pourquoi Gatsby ?
 
-- Popularité (41 600 étoiles sur [GitHub](https://github.com/gatsbyjs/gatsby))
+- Popularité (42 000 ⭐️ sur [GitHub](https://github.com/gatsbyjs/gatsby))
 - Communauté active, dépôt très vivant
 - Modularité, annuaire de plugins
 - React
 
 ---
 
-# Autres solutions similaires
+## Autres solutions similaires
 
+- [Next.js](https://nextjs.org/) (framework _SSR_ qui fait aussi de la génération statique)
 - [React-Static](https://github.com/react-static/react-static/)
-- [Next.js](https://nextjs.org/)
-- [Phenomic](https://phenomic.io/)
 
 ---
 
@@ -23,41 +22,39 @@
 
 Intègre et préconfigure les outils de base en développement React moderne
 
-- Configuration Webpack
-- Navigation (points d'entrée, routage, liens)
+- Rechargement à chaud
+- Configuration _Webpack_ et _Babel_ pour développement et production
+- [Navigation](https://www.gatsbyjs.org/docs/routing/) (points d'entrée avec _code splitting_, routage, liens)
 - SSR Node (pour générer les pages statiques à partir de code React)
+
+---
 
 Mais rien de superflu. Ensuite :
 
-- [Plugins Gatsby](https://www.gatsbyjs.org/plugins/)
+- [Plugins Gatsby](https://www.gatsbyjs.org/plugins/) officiels (pour les cas courants) + communautaires
 - NPM
-- API Node
+- API Node/SSR
 
 ---
 
 ## Données
 
 - Regroupement des données sources (différentes APIs, bases de données, fichiers...)
-- Requêtes GraphQL pour y accéder
+- Requêtes [_GraphQL_](https://www.gatsbyjs.org/docs/graphql/) pour y accéder
+- Plugins source et transformeurs
 
 ---
 
-## GraphQL ? Mais c'est overkill ! 😱
+## GraphQL ?! 😱
 
 - Première approche déroutante
 - Puissance du langage
-- N'embarquer que les données nécessaires dans chaque page
-- Outil intégré à Gatsby : GraphiQL
+- N'embarquer que les données nécessaires dans chaque page ou composant
+- Outil intégré à Gatsby : [_GraphiQL_](https://www.gatsbyjs.org/docs/running-queries-with-graphiql/)
 
 ---
 
-## Framework orienté pour le Web moderne
-
-Outils intégrés + plugins officiels pour les cas courants
-
----
-
-## Gatsby Link
+## [Gatsby Link](https://www.gatsbyjs.org/docs/gatsby-link/)
 
 - Préchargement des liens approchés
 - Navigation Gatsby = `@reach/router` = `react-router`
@@ -72,15 +69,18 @@ Outils intégrés + plugins officiels pour les cas courants
 
 ---
 
-## Manifest / offline
+## Manifest + offline
 
-Une _Progressive Web App_ en configurant un simple plugin
+Générez une _Progressive Web App_ en configurant 2 plugins : [manifest](https://www.gatsbyjs.org/packages/gatsby-plugin-manifest) et [offline](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/)
 
 ---
 
-## Tooling
+## Faiblesses de Gatsby
 
-- Rechargement à chaud en mode `develop`
+- Pas de partage de types entre GraphQL et TypeScript
+- Documentation parfois incomplète (mais mieux qu'avant)
+- Builds non incrémentaux
+- _GraphQL_ overkill pour juste afficher une image optimisée
 
 ---
 
@@ -88,5 +88,5 @@ Une _Progressive Web App_ en configurant un simple plugin
 
 Gatsby 3
 
-- `useQuery` avec _Suspense_, et paramètres (=> [querying 2.0](https://gist.github.com/sidharthachatterjee/e0c961fd92ce287dc020939037b915ce))
-- Incremental builds
+- Builds incrémentaux
+- GraphQL : `useQuery` avec _Suspense_, et paramètres (=> [querying 2.0](https://gist.github.com/sidharthachatterjee/e0c961fd92ce287dc020939037b915ce))

@@ -13,6 +13,14 @@
 
 ---
 
+### Difficultés
+
+- Build long car beaucoup de pages => `matchPath` pour 5000 événements passés
+- Détection automatique du schéma de données si pas d'utilisation de `createTypes`
+- Attention à la cohérence des données réconciliées avec `ReactDOM.hydrate`
+
+---
+
 ## SlowPrint
 
 [slowprint.fr](https://slowprint.fr)
@@ -20,6 +28,8 @@
 - e-commerce simple
 - Backoffice en SaaS pour gérer les produits (Contentful)
 - Hébergement Netlify avec fonctions serverless pour le paiement Stripe
+
+Les pages produits sont donc pré-générées mais pas la partie utilisateur (seulement la coquille)
 
 ---
 
@@ -29,7 +39,7 @@
 
 - Backoffice en SaaS pour gérer les produits (Contentful)
 - Hébergement Netlify avec fonction serverless pour le formulaire de contact
-- Bientôt : réservation d'atelier
+- Bientôt : réservation d'ateliers
 
 ---
 
@@ -39,4 +49,4 @@
 
 - Site vitrine
 - Référencement
-- Grandes images, pages longues
+- Grandes images, pages longues et interactives
