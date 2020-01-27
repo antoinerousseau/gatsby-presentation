@@ -10,6 +10,8 @@ Présentation et retours d'expérience
 
 [Ô Local](https://www.olocal.fr/) 🏠
 
+[Gatsby](https://www.gatsbyjs.org/) 🎁
+
 ---
 
 ## Gatsby, c'est quoi ?
@@ -64,8 +66,16 @@ Mais...
 
 Statique + _PWA_ = ❤️
 
-- Pages générées (statiques)
-- Le contenu s'affiche immédiatement, puis l'interactivité arrive pour "augmenter" la page : JavaScript reprend la main (`ReactDOM.hydrate`)
+- Pages statiques = générées au _build_ (chacune avec leur HTML/CSS/JavaScript) à partir de données sources (API, fichiers Markdown, base de données...)
+
+---
+
+## Hydratation 💧
+
+Le contenu s'affiche immédiatement, puis l'interactivité arrive pour "augmenter" la page : JavaScript reprend la main (`ReactDOM.hydrate`)
+
+---
+
 - Fonctionne même sans JavaScript
 - Référencement plus rapide et plus fiable
 - Possibilité de réserver des portions au côté client
@@ -108,3 +118,5 @@ Selon le contenu :
 https://jamstack.systems/
 
 https://jamstack.org/
+
+https://jamstack.wtf/

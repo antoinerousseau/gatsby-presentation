@@ -38,9 +38,9 @@ Mais rien de superflu. Ensuite :
 
 ## Données
 
-- Regroupement des données sources
-- Requêtes [_GraphQL_](https://www.gatsbyjs.org/docs/graphql/) pour y accéder
+- Regroupement des données sources dans un _store_ local
 - Plugins source et transformeurs
+- Requêtes [_GraphQL_](https://www.gatsbyjs.org/docs/graphql/) pour y accéder
 
 ---
 
