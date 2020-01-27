@@ -9,7 +9,7 @@
 
 ## Autres solutions similaires
 
-- [Next.js](https://nextjs.org/) (framework _SSR_ qui fait aussi de la génération statique)
+- [Next.js](https://nextjs.org/) (framework _SSR_ + statique)
 - [React-Static](https://github.com/react-static/react-static/)
 
 ---
@@ -20,12 +20,11 @@
 
 ## Framework
 
-Intègre et préconfigure les outils de base en développement React moderne
+Outils de base en développement React moderne
 
 - Rechargement à chaud
-- Configuration _Webpack_ et _Babel_ pour développement et production
+- Config _Webpack_ et _Babel_ (développement+production)
 - [Navigation](https://www.gatsbyjs.org/docs/routing/) (points d'entrée avec _code splitting_, routage, liens)
-- SSR Node (pour générer les pages statiques à partir de code React)
 
 ---
 
@@ -39,7 +38,7 @@ Mais rien de superflu. Ensuite :
 
 ## Données
 
-- Regroupement des données sources (différentes APIs, bases de données, fichiers...)
+- Regroupement des données sources
 - Requêtes [_GraphQL_](https://www.gatsbyjs.org/docs/graphql/) pour y accéder
 - Plugins source et transformeurs
 
@@ -49,7 +48,7 @@ Mais rien de superflu. Ensuite :
 
 - Première approche déroutante
 - Puissance du langage
-- N'embarquer que les données nécessaires dans chaque page ou composant
+- N'embarquer que les données nécessaires
 - Outil intégré à Gatsby : [_GraphiQL_](https://www.gatsbyjs.org/docs/running-queries-with-graphiql/)
 
 ---
@@ -57,21 +56,21 @@ Mais rien de superflu. Ensuite :
 ## [Gatsby Link](https://www.gatsbyjs.org/docs/gatsby-link/)
 
 - Préchargement des liens approchés
-- Navigation Gatsby = `@reach/router` = `react-router`
+- [Routage](https://www.gatsbyjs.org/docs/routing/) via `@reach/router`
 
 ---
 
-## Gatsby Image
+## [Gatsby Image](https://www.gatsbyjs.org/docs/using-gatsby-image/)
 
-- Génération de plusieurs tailles de chaque image (pour _srcset_)
+- Génération de plusieurs tailles (pour _srcset_)
 - Affichage progressif (_placeholder_ + transition)
-- Affichage des images visibles uniquement (`IntersectionObserver`)
+- Affichage des images visibles uniquement
 
 ---
 
 ## Manifest + offline
 
-Générez une _Progressive Web App_ en configurant 2 plugins : [manifest](https://www.gatsbyjs.org/packages/gatsby-plugin-manifest) et [offline](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/)
+_Progressive Web App_ via 2 plugins : [manifest](https://www.gatsbyjs.org/packages/gatsby-plugin-manifest) et [offline](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/)
 
 ---
 
@@ -89,4 +88,4 @@ Générez une _Progressive Web App_ en configurant 2 plugins : [manifest](https:
 Gatsby 3
 
 - Builds incrémentaux
-- GraphQL : `useQuery` avec _Suspense_, et paramètres (=> [querying 2.0](https://gist.github.com/sidharthachatterjee/e0c961fd92ce287dc020939037b915ce))
+- GraphQL : `useQuery` avec _Suspense_, et [paramètres](https://gist.github.com/sidharthachatterjee/e0c961fd92ce287dc020939037b915ce)

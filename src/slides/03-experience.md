@@ -15,9 +15,9 @@
 
 ### Difficultés
 
-- Build long car beaucoup de pages => `matchPath` pour 5000 événements passés
-- Détection automatique du schéma de données si pas d'utilisation de `createTypes`
-- Attention à la cohérence des données réconciliées avec `ReactDOM.hydrate`
+- Build long car beaucoup de pages ➡️ `matchPath` pour événements passés
+- Détection automatique du schéma de données ➡️ `createTypes`
+- Cohérence des données réconciliées avec [`ReactDOM.hydrate`](https://reactjs.org/docs/react-dom.html#hydrate)
 
 ---
 
