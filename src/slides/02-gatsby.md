@@ -88,4 +88,4 @@ _Progressive Web App_ via 2 plugins : [manifest](https://www.gatsbyjs.org/packag
 Gatsby 3
 
 - Builds incrémentaux
-- GraphQL : `useQuery` avec _Suspense_, et [paramètres](https://gist.github.com/sidharthachatterjee/e0c961fd92ce287dc020939037b915ce)
+- GraphQL : [`useQuery` avec _Suspense_](https://twitter.com/chatsidhartha/status/1212386859579428864), et [paramètres](https://gist.github.com/sidharthachatterjee/e0c961fd92ce287dc020939037b915ce)
